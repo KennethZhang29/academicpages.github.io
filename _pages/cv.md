@@ -12,7 +12,7 @@ redirect_from:
 Research Profile
 ======
 
-I am preparing for research-focused graduate study in learning-guided combinatorial optimization and intelligent logistics. My work combines optimization modeling, heuristic solver development, machine learning signals, and careful empirical evaluation.
+I am an undergraduate student in the Faculty of Data Science at City University of Macau. My work lies at the intersection of machine learning, combinatorial optimization, and intelligent transportation, combining optimization modeling, heuristic solver development, learned structural guidance, and careful empirical evaluation.
 
 Research Experience
 ======

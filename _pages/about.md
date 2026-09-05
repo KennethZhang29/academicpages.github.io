@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Kenneth Zhang"
+title: "Yuyao Zhang (张誉耀)"
 author_profile: true
 redirect_from:
   - /about/
@@ -9,11 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-<p class="research-eyebrow">Research portfolio · HKUST(GZ) Red Bird MPhil applicant</p>
+<p class="research-eyebrow">Undergraduate researcher · City University of Macau</p>
 
-<p class="research-lead">I study learning-guided combinatorial optimization for constrained routing, where strong solvers, learned priors, and careful evidence meet.</p>
+<p class="research-lead">My research interests lie at the intersection of machine learning, combinatorial optimization, and intelligent transportation.</p>
 
-<p class="research-copy">My current work asks a practical question: how can learning improve a trusted heuristic without hiding the mechanism that makes it reliable? I build hybrid optimization systems for intelligent logistics, then test not only whether they work, but why they work and when they fail.</p>
+<p class="research-copy">My current work centers on a simple question: <strong>How can learning help strong classical optimization solvers make better decisions?</strong> Rather than relying on neural networks to construct complete solutions from scratch, I explore how learned structural information can guide established optimization methods.</p>
 
 <div class="signal-row" aria-label="Research highlights">
   <div class="signal">
@@ -29,6 +29,14 @@ redirect_from:
     <span class="signal__label">connected research lines in constrained routing</span>
   </div>
 </div>
+
+## About me
+
+I am an undergraduate student in the Faculty of Data Science at City University of Macau. My work explores how structural information, such as promising candidate edges, route-state signals, and feasibility-aware patterns, can guide solvers including Population-LKH and local search.
+
+I am particularly interested in routing problems shaped by real-world constraints, including customer groups, priority rules, charging stations, battery capacity, and time windows. My recent work includes learning-guided approaches for constrained clustered traveling salesman problems, as well as ongoing research on energy-constrained delivery planning for drones and electric vehicles.
+
+Beyond model performance, I care about reliable experimentation, interpretable improvements, and understanding why an optimization method works or fails. When I am not debugging a routing instance or investigating a suspiciously good result, I enjoy thinking about how machine learning and optimization can work together to solve practical operational problems.
 
 ## Research interests
 
