@@ -9,32 +9,67 @@ redirect_from:
 
 {% include base_path %}
 
-I am an early-career researcher interested in **learning-guided combinatorial optimization**: methods that combine the reliability of strong classical heuristics with learned structural signals.
+<p class="research-eyebrow">Research portfolio · HKUST(GZ) Red Bird MPhil applicant</p>
 
-My current work studies constrained routing problems where feasibility, route structure, and computational budget must be considered together. I am especially interested in intelligent logistics, neural-combinatorial optimization, and evaluation practices that turn experimental results into credible scientific claims.
+<p class="research-lead">I study learning-guided combinatorial optimization for constrained routing, where strong solvers, learned priors, and careful evidence meet.</p>
+
+<p class="research-copy">My current work asks a practical question: how can learning improve a trusted heuristic without hiding the mechanism that makes it reliable? I build hybrid optimization systems for intelligent logistics, then test not only whether they work, but why they work and when they fail.</p>
+
+<div class="signal-row" aria-label="Research highlights">
+  <div class="signal">
+    <span class="signal__value">12 / 12</span>
+    <span class="signal__label">portfolio-best matches on public finite-L BWTSP instances</span>
+  </div>
+  <div class="signal">
+    <span class="signal__value">3.10x</span>
+    <span class="signal__label">lower selection cost with guarded configuration choice</span>
+  </div>
+  <div class="signal">
+    <span class="signal__value">2</span>
+    <span class="signal__label">connected research lines in constrained routing</span>
+  </div>
+</div>
 
 ## Research interests
 
-- Learning-guided heuristic search and large-neighborhood optimization
-- Constrained routing, including budgeted and energy-aware variants
-- Intelligent logistics and decision systems
-- Benchmark design, ablation studies, and robust evaluation
+<div class="research-grid">
+  <article class="research-card">
+    <span class="research-card__tag">Optimization</span>
+    <h3>Learning-guided search</h3>
+    <p>Combining learned structural signals with large-neighborhood and local-search heuristics.</p>
+  </article>
+  <article class="research-card">
+    <span class="research-card__tag">Routing</span>
+    <h3>Constrained decision systems</h3>
+    <p>Budgeted, energy-aware, and payload-dependent routing for intelligent logistics.</p>
+  </article>
+  <article class="research-card">
+    <span class="research-card__tag">Methodology</span>
+    <h3>Reliable empirical claims</h3>
+    <p>Benchmark design, ablation studies, route diagnostics, and evaluation under distribution shift.</p>
+  </article>
+  <article class="research-card">
+    <span class="research-card__tag">Research direction</span>
+    <h3>Interpretable hybrid solvers</h3>
+    <p>Optimization systems whose learned components are useful, inspectable, and anchored in dependable search.</p>
+  </article>
+</div>
 
 ## Current focus
 
-I am developing a learned structural-prior guided Population-LKH framework for the Budgeted Weighted Traveling Salesman Problem (BWTSP). The project uses learned edge priors, adaptive prior policies, and a guarded selector to guide strong local search under finite-L constraints.
-
-The next step is to extend these ideas to payload-dependent, energy-constrained drone delivery with optional charging stations. I want to understand when edge-level information is enough, when move- and state-aware guidance is necessary, and how hybrid methods hold up under scale and distribution shift.
+I am developing a learned structural-prior guided Population-LKH framework for the Budgeted Weighted Traveling Salesman Problem (BWTSP). The framework combines learned edge priors, adaptive prior policies, and a guarded selector to guide strong local search under finite-L constraints.
 
 <figure>
   <img src="{{ base_path }}/images/research-framework.png" alt="Learning-guided Population-LKH research framework" />
-  <figcaption>Research framework: learned structural priors guide classical combinatorial search.</figcaption>
+  <figcaption>Research framework: learned structural priors guide classical combinatorial search while retaining the solver's search backbone.</figcaption>
 </figure>
 
-## Selected evidence
+The next research step is energy-constrained drone delivery with payload-dependent energy consumption and optional charging stations. I am exploring when edge-level information is sufficient, when move- and route-state-aware guidance becomes necessary, and how hybrid methods behave at scale.
 
-On twelve public finite-L BWTSP instances, the guarded selector matched the portfolio-best configuration on all twelve cases while reducing selection cost by approximately 3.10x. The project includes benchmark tables, route visualizations, ablation studies, and a research proposal for the next application domain.
+<div class="evidence-note">
+  <p><strong>Selected result.</strong> On twelve public finite-L BWTSP instances, the guarded selector matched the portfolio-best configuration in all twelve cases while reducing selection cost by approximately 3.10x.</p>
+</div>
 
-## Contact
+## Explore the work
 
-My code and ongoing project work are available on [GitHub](https://github.com/KennethZhang29). I welcome conversations about research collaboration, MPhil supervision fit, and intelligent logistics.
+Read the two project narratives in [Research Projects]({{ base_path }}/portfolio/) or follow the ongoing code and experiment trail on [GitHub](https://github.com/KennethZhang29).
