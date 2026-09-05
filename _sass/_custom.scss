@@ -2,10 +2,12 @@
 
 :root {
   --profile-ink: #1f2e32;
-  --profile-muted: #667370;
-  --profile-paper: #f1f4f2;
-  --profile-surface: #fafbf9;
-  --profile-line: #d4ddda;
+  --profile-muted: #6e6877;
+  --profile-paper: #f4f0fa;
+  --profile-surface: rgba(255, 255, 255, 0.76);
+  --profile-line: #d9d0e2;
+  --profile-page-background: linear-gradient(135deg, #f8f5fc 0%, #ebe3f5 48%, #e7efed 100%);
+  --profile-nav-background: rgba(248, 245, 252, 0.82);
   --profile-teal: #166f68;
   --profile-coral: #b95e4c;
   --profile-gold: #9b7835;
@@ -19,10 +21,12 @@
 
 [data-theme="dark"] {
   --profile-ink: #e8efed;
-  --profile-muted: #a9b5b2;
-  --profile-paper: #11191c;
-  --profile-surface: #192326;
-  --profile-line: #334247;
+  --profile-muted: #b8afc2;
+  --profile-paper: #15111d;
+  --profile-surface: rgba(29, 23, 38, 0.82);
+  --profile-line: #493b57;
+  --profile-page-background: linear-gradient(135deg, #121019 0%, #21162b 50%, #111b1d 100%);
+  --profile-nav-background: rgba(18, 16, 25, 0.86);
   --profile-teal: #63bdb2;
   --profile-coral: #e58c78;
   --profile-gold: #d5ae61;
@@ -30,17 +34,22 @@
 }
 
 body {
-  background: var(--profile-paper);
+  background-color: var(--profile-paper);
+  background-image: var(--profile-page-background);
+  background-attachment: fixed;
+  background-size: cover;
   font-size: 0.94rem;
 }
 
 .masthead {
+  background: var(--profile-nav-background);
   border-bottom: 1px solid var(--profile-line);
   box-shadow: none;
+  backdrop-filter: blur(16px);
 }
 
 .greedy-nav {
-  background: var(--profile-paper);
+  background: transparent;
 }
 
 .masthead__menu-item--lg a {
