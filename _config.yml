@@ -23,7 +23,7 @@ repository               : "KennethZhang29/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           :
+  avatar           : "yuyao-zhang.jpg"
   name             : "Yuyao Zhang (张誉耀)"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate researcher working on learning-augmented optimization, constrained routing, and intelligent transportation."

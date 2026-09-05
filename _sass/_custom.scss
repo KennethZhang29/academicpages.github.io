@@ -57,6 +57,16 @@ body {
   font-weight: 800;
 }
 
+.author__avatar img,
+.author__avatar img.author__avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--profile-line);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 24%;
+}
+
 .author__bio {
   color: var(--profile-muted);
   line-height: 1.65;
