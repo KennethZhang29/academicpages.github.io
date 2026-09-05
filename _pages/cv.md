@@ -9,56 +9,37 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+Research Profile
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+I am preparing for research-focused graduate study in learning-guided combinatorial optimization and intelligent logistics. My work combines optimization modeling, heuristic solver development, machine learning signals, and careful empirical evaluation.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Research Experience
+======
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**Learning-guided Population-LKH for BWTSP**
 
-Publications
+- Built a neural-combinatorial framework using learned edge priors, adaptive prior policies, and guarded configuration selection.
+- Developed a benchmark-oriented evaluation workflow with portfolio comparisons, ablations, route visualizations, and selection-cost analysis.
+- Obtained a 12/12 portfolio-best match rate with approximately 3.10x lower selection cost on public finite-L instances.
+
+**Energy-constrained drone delivery**
+
+- Developing a research plan for payload-dependent routing with optional charging stations.
+- Investigating hybrid edge, move, and route-state guidance for feasibility-aware local search.
+
+Technical Skills
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+
+- Combinatorial optimization and heuristic search
+- Learning-guided optimization and model-assisted decision making
+- Experiment design, ablation analysis, and research visualization
+- Python-based research engineering and reproducible benchmarking
+
+Research Interests
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
+- Intelligent logistics and routing
+- Neural-combinatorial optimization
+- Robust search under constraints and distribution shift
+- Explainable empirical methodology for optimization research
