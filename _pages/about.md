@@ -38,6 +38,27 @@ I am particularly interested in routing problems shaped by real-world constraint
 
 Beyond model performance, I care about reliable experimentation, interpretable improvements, and understanding why an optimization method works or fails. When I am not debugging a routing instance or investigating a suspiciously good result, I enjoy thinking about how machine learning and optimization can work together to solve practical operational problems.
 
+## Education & experience
+
+<div class="profile-timeline">
+  <article class="timeline-entry">
+    <span class="timeline-entry__icon" aria-hidden="true"><i class="fa-solid fa-flask"></i></span>
+    <div>
+      <span class="timeline-entry__date">Jun 2026 – Aug 2026</span>
+      <h3>Research Assistant</h3>
+      <p>iLSCA Lab, The Hong Kong University of Science and Technology (Guangzhou)</p>
+    </div>
+  </article>
+  <article class="timeline-entry">
+    <span class="timeline-entry__icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+    <div>
+      <span class="timeline-entry__date">2023 – 2027 (expected)</span>
+      <h3>Undergraduate Study</h3>
+      <p>Faculty of Data Science, City University of Macau</p>
+    </div>
+  </article>
+</div>
+
 ## Research interests
 
 <div class="research-grid">

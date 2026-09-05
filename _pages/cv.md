@@ -14,8 +14,17 @@ Research Profile
 
 I am an undergraduate student in the Faculty of Data Science at City University of Macau. My work lies at the intersection of machine learning, combinatorial optimization, and intelligent transportation, combining optimization modeling, heuristic solver development, learned structural guidance, and careful empirical evaluation.
 
+Education
+======
+
+**Undergraduate Study, Faculty of Data Science**<br>
+City University of Macau · 2023–2027 (expected)
+
 Research Experience
 ======
+
+**Research Assistant, iLSCA Lab**<br>
+The Hong Kong University of Science and Technology (Guangzhou) · Jun 2026–Aug 2026
 
 **Learning-guided Population-LKH for BWTSP**
 
