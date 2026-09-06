@@ -765,8 +765,17 @@
   line-height: 1.7;
 }
 
-.folio-contact .folio-outline-button {
+.folio-contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
   margin-top: 2.2rem;
+}
+
+.folio-contact__actions a {
+  gap: 0.5rem;
 }
 
 .folio-contact > .folio-credit {

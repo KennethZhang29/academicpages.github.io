@@ -11,6 +11,7 @@ redirect_from:
 {% include base_path %}
 
 <aside class="folio-side folio-side--left" aria-label="Profile links">
+  <a href="mailto:kennethzhang29@outlook.com" aria-label="Email Kenneth Zhang" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
   <a href="https://github.com/KennethZhang29" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
   <a href="{{ base_path }}/cv/" aria-label="Curriculum vitae" title="CV"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></a>
   <a href="#research" aria-label="Research projects" title="Research"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></a>
@@ -145,6 +146,9 @@ redirect_from:
   <p class="folio-eyebrow">04. What’s Next?</p>
   <h2 id="contact-title">Let’s solve a hard routing problem.</h2>
   <p>I am interested in research opportunities and conversations around learning-augmented optimization, intelligent transportation, and reliable combinatorial search.</p>
-  <a class="folio-outline-button" href="https://github.com/KennethZhang29">Find me on GitHub</a>
+  <div class="folio-contact__actions">
+    <a class="folio-outline-button" href="mailto:kennethzhang29@outlook.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email me</a>
+    <a class="folio-text-link" href="https://github.com/KennethZhang29"><i class="fab fa-github" aria-hidden="true"></i> Find me on GitHub</a>
+  </div>
   <p class="folio-credit">Design direction inspired by <a href="https://brittanychiang.com">Brittany Chiang</a>.</p>
 </section>
