@@ -247,8 +247,8 @@
 .folio-hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(13rem, 16rem);
-  column-gap: 3rem;
+  grid-template-columns: minmax(0, 1fr) 9rem;
+  column-gap: 2.5rem;
   min-height: 88vh;
   align-content: center;
   padding: 6rem 0 4rem;
@@ -282,11 +282,11 @@
 }
 
 .folio-hero__portrait img {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   border: 1px solid var(--folio-line);
   border-radius: 4px;
   object-fit: cover;
-  object-position: 50% 36%;
+  object-position: 50% 31%;
 }
 
 .folio-eyebrow,
@@ -441,10 +441,7 @@
 }
 
 .folio-about__inner {
-  display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(14rem, 2fr);
-  gap: 3.3rem;
-  align-items: start;
+  max-width: 48rem;
 }
 
 .folio-about__text p {
@@ -886,7 +883,7 @@
   }
 
   .folio-hero__portrait {
-    width: 10rem;
+    width: 6.5rem;
     margin: 1.8rem 0 2rem;
   }
 

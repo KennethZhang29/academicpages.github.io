@@ -54,12 +54,6 @@ redirect_from:
         <li>Energy-Constrained Delivery</li>
       </ul>
     </div>
-    <figure class="folio-portrait">
-      <div class="folio-portrait__frame">
-        <img src="{{ base_path }}/images/kenneth-zhang.jpg" alt="Portrait of Kenneth Zhang" />
-      </div>
-      <figcaption>Kenneth Zhang · 张誉耀</figcaption>
-    </figure>
   </div>
 </section>
 
