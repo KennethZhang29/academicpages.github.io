@@ -41,6 +41,7 @@ redirect_from:
       <p>Hi! I’m <strong>Kenneth Zhang (张誉耀)</strong>, an undergraduate student at the Faculty of Data Science, City University of Macau. I am interested in the intersection of machine learning, combinatorial optimization, and intelligent transportation.</p>
       <p>My current research explores a simple question: <strong>can learning help strong classical optimization solvers make better decisions?</strong> Instead of asking neural networks to construct an entire route from scratch, I work on learning useful structural hints, such as promising candidate edges, route-state signals, and feasibility-aware patterns, to guide Population-LKH and local search.</p>
       <p>I am especially interested in routing problems with practical constraints: customer groups, priority rules, charging stations, battery limits, and time windows.</p>
+      <p>Outside research, I enjoy playing football and tennis, watching films, and playing Counter-Strike 2. I am also a devoted Chelsea supporter.</p>
       <p>Some areas I am currently working with:</p>
       <ul class="folio-skills">
         <li>Learning-Augmented Optimization</li>
