@@ -615,8 +615,14 @@
 }
 
 .folio-project__content h3 {
-  font-size: 1.65rem;
-  line-height: 1.2;
+  max-width: 82%;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.folio-project:nth-child(odd) .folio-project__content h3 {
+  margin-left: auto;
 }
 
 .folio-project__description {
@@ -891,6 +897,13 @@
     padding: 1.6rem;
     text-align: left;
     backdrop-filter: blur(14px);
+  }
+
+  .folio-project__content h3,
+  .folio-project:nth-child(odd) .folio-project__content h3 {
+    max-width: none;
+    margin-left: 0;
+    font-size: 1.35rem;
   }
 
   .folio-project__description {
