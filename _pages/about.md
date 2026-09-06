@@ -104,7 +104,7 @@ redirect_from:
           <a href="https://github.com/KennethZhang29" aria-label="View GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
         </div>
       </div>
-      <a class="folio-project__image" href="{{ base_path }}/portfolio/portfolio-1/" aria-label="Read Learned Structural-Prior Guided Population-LKH project"><img src="{{ base_path }}/images/research-framework.png" alt="Framework for learned structural-prior guided Population-LKH" /></a>
+      <a class="folio-project__image" href="{{ base_path }}/portfolio/portfolio-1/" aria-label="Read Learned Structural-Prior Guided Population-LKH project"><img src="{{ base_path }}/images/cover-learned-search.jpg" alt="Learning-guided search network illustration" /></a>
     </article>
 
     <article class="folio-project">
@@ -115,7 +115,7 @@ redirect_from:
         <ul class="folio-project__tech"><li>Vehicle Routing</li><li>Energy Models</li><li>Feasibility-Aware Search</li></ul>
         <div class="folio-project__links"><a href="{{ base_path }}/portfolio/portfolio-2/" aria-label="Read energy-constrained delivery project" title="Read project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
       </div>
-      <a class="folio-project__image" href="{{ base_path }}/portfolio/portfolio-2/" aria-label="Read energy-constrained delivery project"><img src="{{ base_path }}/images/route-comparison.png" alt="Route comparison for constrained routing experiments" /></a>
+      <a class="folio-project__image" href="{{ base_path }}/portfolio/portfolio-2/" aria-label="Read energy-constrained delivery project"><img src="{{ base_path }}/images/cover-energy-routing.jpg" alt="Energy routing map for drones and electric vehicles" /></a>
     </article>
 
     <article class="folio-project">
@@ -125,7 +125,7 @@ redirect_from:
         <div class="folio-project__description"><p>I use ablations, route visualization, portfolio comparisons, and mechanism-level diagnostics to understand whether an improvement is real and why it happens.</p></div>
         <ul class="folio-project__tech"><li>Ablation Studies</li><li>Diagnostics</li><li>Reproducibility</li></ul>
       </div>
-      <div class="folio-project__image"><img src="{{ base_path }}/images/ablation.png" alt="Ablation results for learning-guided BWTSP search" /></div>
+      <div class="folio-project__image"><img src="{{ base_path }}/images/cover-evidence-first.jpg" alt="Evidence-first ablation and diagnostics illustration" /></div>
     </article>
   </div>
 </section>
