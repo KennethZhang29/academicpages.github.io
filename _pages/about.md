@@ -42,6 +42,7 @@ redirect_from:
       <p>Hi! I’m <strong>Kenneth Zhang (张誉耀)</strong>, an undergraduate student at the Faculty of Data Science, City University of Macau. I am interested in the intersection of machine learning, combinatorial optimization, and intelligent transportation.</p>
       <p>My current research explores a simple question: <strong>can learning help strong classical optimization solvers make better decisions?</strong> Instead of asking neural networks to construct an entire route from scratch, I work on learning useful structural hints, such as promising candidate edges, route-state signals, and feasibility-aware patterns, to guide Population-LKH and local search.</p>
       <p>I am especially interested in routing problems with practical constraints: customer groups, priority rules, charging stations, battery limits, and time windows.</p>
+      <p>One ongoing direction extends this work to energy-constrained delivery for drones and electric vehicles, where route order, payload, battery use, and charging decisions interact.</p>
       <p>Outside research, I enjoy playing football and tennis, watching films, and playing Counter-Strike 2. I am also a devoted Chelsea supporter.</p>
       <p>Some areas I am currently working with:</p>
       <ul class="folio-skills">
@@ -111,13 +112,13 @@ redirect_from:
 
     <article class="folio-project">
       <div class="folio-project__content">
-        <p class="folio-project__overline">Ongoing Research</p>
-        <h3>Energy-Constrained Delivery</h3>
-        <div class="folio-project__description"><p>Extending static edge guidance toward move- and route-state-aware optimization for drones and electric vehicles under battery, payload, and charging constraints.</p></div>
-        <ul class="folio-project__tech"><li>Vehicle Routing</li><li>Energy Models</li><li>Feasibility-Aware Search</li></ul>
-        <div class="folio-project__links"><a href="{{ base_path }}/portfolio/portfolio-2/" aria-label="Read energy-constrained delivery project" title="Read project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+        <p class="folio-project__overline">Collaborative Paper</p>
+        <h3>GC-POMO: Group-Aware Deep RL for Constrained TSPs</h3>
+        <div class="folio-project__description"><p>A unified reinforcement learning framework that combines group-aware attention with interactive inter- and intra-group decoding for BWTSP and CTSP-d.</p></div>
+        <ul class="folio-project__tech"><li>Deep Reinforcement Learning</li><li>Group-Aware Attention</li><li>Dual Decoder</li></ul>
+        <div class="folio-project__links"><a href="{{ base_path }}/portfolio/portfolio-2/" aria-label="Read the GC-POMO research project" title="Read project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
       </div>
-      <a class="folio-project__image" href="{{ base_path }}/portfolio/portfolio-2/" aria-label="Read energy-constrained delivery project"><img src="{{ base_path }}/images/cover-energy-routing.jpg" alt="Energy routing map for drones and electric vehicles" /></a>
+      <a class="folio-project__image" href="{{ base_path }}/portfolio/portfolio-2/" aria-label="Read the GC-POMO research project"><img src="{{ base_path }}/images/cover-group-aware-routing.jpg" alt="Group-aware routing across constrained node groups" /></a>
     </article>
 
     <article class="folio-project">
