@@ -6,7 +6,7 @@
   --profile-paper: #f4f0fa;
   --profile-surface: rgba(255, 255, 255, 0.76);
   --profile-line: #d9d0e2;
-  --profile-page-background: linear-gradient(135deg, #f8f5fc 0%, #ebe3f5 48%, #e7efed 100%);
+  --profile-page-background: linear-gradient(135deg, #faf7ff 0%, #e6ddf7 38%, #d7efeb 70%, #f6e0e5 100%);
   --profile-nav-background: rgba(248, 245, 252, 0.82);
   --profile-teal: #166f68;
   --profile-coral: #b95e4c;
@@ -25,7 +25,7 @@
   --profile-paper: #15111d;
   --profile-surface: rgba(29, 23, 38, 0.82);
   --profile-line: #493b57;
-  --profile-page-background: linear-gradient(135deg, #121019 0%, #21162b 50%, #111b1d 100%);
+  --profile-page-background: linear-gradient(135deg, #100a1b 0%, #21143a 38%, #102b31 70%, #321626 100%);
   --profile-nav-background: rgba(18, 16, 25, 0.86);
   --profile-teal: #63bdb2;
   --profile-coral: #e58c78;
@@ -496,6 +496,7 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
+  transform: translateZ(0);
 }
 
 .masthead,

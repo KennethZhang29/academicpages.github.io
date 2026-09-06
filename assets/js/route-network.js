@@ -13,18 +13,27 @@
   let scale = 1;
   let nodes = [];
   let frame = 0;
+  let lastPaint = 0;
   let animationId = 0;
 
   const colors = () => darkMode()
     ? {
-        edge: 'rgba(174, 132, 230, 0.13)',
-        route: 'rgba(201, 160, 255, 0.58)',
-        node: 'rgba(228, 211, 255, 0.64)',
+        background: ['#100a1b', '#21143a', '#102b31', '#321626'],
+        violet: 'rgba(157, 104, 234, 0.32)',
+        aqua: 'rgba(51, 181, 177, 0.24)',
+        coral: 'rgba(222, 104, 122, 0.18)',
+        edge: 'rgba(220, 197, 255, 0.1)',
+        route: 'rgba(227, 207, 255, 0.42)',
+        node: 'rgba(239, 226, 255, 0.52)',
       }
     : {
-        edge: 'rgba(103, 64, 151, 0.09)',
-        route: 'rgba(111, 68, 167, 0.38)',
-        node: 'rgba(91, 57, 135, 0.42)',
+        background: ['#faf7ff', '#e6ddf7', '#d7efeb', '#f6e0e5'],
+        violet: 'rgba(116, 70, 194, 0.2)',
+        aqua: 'rgba(18, 139, 143, 0.16)',
+        coral: 'rgba(211, 102, 118, 0.12)',
+        edge: 'rgba(81, 50, 126, 0.075)',
+        route: 'rgba(93, 53, 153, 0.3)',
+        node: 'rgba(72, 45, 112, 0.34)',
       };
 
   const seededValue = (index, offset) => {
@@ -62,6 +71,74 @@
     x: node.x + Math.sin(time * 0.00017 + node.phase) * node.driftX,
     y: node.y + Math.cos(time * 0.00015 + node.phase) * node.driftY,
   });
+
+  const drawFlowBand = ({ center, thickness, amplitude, frequency, speed, phase, color }, time) => {
+    const step = Math.max(36, width / 28);
+    const offset = reducedMotion.matches ? 0 : time * speed;
+
+    context.beginPath();
+    for (let x = -step; x <= width + step; x += step) {
+      const y = center
+        + Math.sin(x * frequency + offset + phase) * amplitude
+        + Math.sin(x * frequency * 0.43 - offset * 0.7 + phase) * amplitude * 0.35;
+      if (x === -step) context.moveTo(x, y - thickness);
+      else context.lineTo(x, y - thickness);
+    }
+
+    for (let x = width + step; x >= -step; x -= step) {
+      const y = center
+        + Math.sin(x * frequency + offset + phase) * amplitude
+        + Math.sin(x * frequency * 0.43 - offset * 0.7 + phase) * amplitude * 0.35;
+      context.lineTo(x, y + thickness);
+    }
+
+    context.closePath();
+    context.fillStyle = color;
+    context.fill();
+  };
+
+  const drawFlowField = (palette, time) => {
+    const shift = reducedMotion.matches ? 0 : Math.sin(time * 0.000055) * width * 0.18;
+    const gradient = context.createLinearGradient(-width * 0.2 + shift, 0, width * 1.2 + shift, height);
+    gradient.addColorStop(0, palette.background[0]);
+    gradient.addColorStop(0.34, palette.background[1]);
+    gradient.addColorStop(0.67, palette.background[2]);
+    gradient.addColorStop(1, palette.background[3]);
+    context.fillStyle = gradient;
+    context.fillRect(0, 0, width, height);
+
+    context.save();
+    context.filter = `blur(${Math.max(42, Math.min(90, width * 0.055))}px)`;
+    context.globalCompositeOperation = darkMode() ? 'screen' : 'multiply';
+    drawFlowBand({
+      center: height * 0.2,
+      thickness: height * 0.17,
+      amplitude: height * 0.11,
+      frequency: 0.0033,
+      speed: 0.00017,
+      phase: 0.8,
+      color: palette.violet,
+    }, time);
+    drawFlowBand({
+      center: height * 0.58,
+      thickness: height * 0.2,
+      amplitude: height * 0.14,
+      frequency: 0.0025,
+      speed: -0.00012,
+      phase: 2.1,
+      color: palette.aqua,
+    }, time);
+    drawFlowBand({
+      center: height * 0.9,
+      thickness: height * 0.14,
+      amplitude: height * 0.09,
+      frequency: 0.0041,
+      speed: 0.0001,
+      phase: 4.4,
+      color: palette.coral,
+    }, time);
+    context.restore();
+  };
 
   const drawNetwork = (positions, palette) => {
     context.lineWidth = 0.7;
@@ -118,8 +195,15 @@
   };
 
   const draw = (time = 0) => {
+    if (!reducedMotion.matches && time && time - lastPaint < 32) {
+      animationId = window.requestAnimationFrame(draw);
+      return;
+    }
+
+    lastPaint = time;
     context.clearRect(0, 0, width, height);
     const palette = colors();
+    drawFlowField(palette, time);
     const positions = nodes.map((node) => positionAt(node, time));
     drawNetwork(positions, palette);
     drawRoute(positions, palette, time);
