@@ -246,47 +246,12 @@
 
 .folio-hero {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 9rem;
-  column-gap: 2.5rem;
+  display: flex;
   min-height: 88vh;
-  align-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   padding: 6rem 0 4rem;
-}
-
-.folio-hero > .folio-eyebrow,
-.folio-hero > h1,
-.folio-hero > h2,
-.folio-hero > .folio-hero__intro,
-.folio-hero > .folio-hero__actions {
-  grid-column: 1;
-}
-
-.folio-hero__portrait {
-  position: relative;
-  grid-column: 2;
-  grid-row: 1 / 6;
-  align-self: center;
-  width: 100%;
-  margin: 0;
-}
-
-.folio-hero__portrait::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border: 2px solid var(--folio-accent);
-  border-radius: 4px;
-  transform: translate(0.9rem, 0.9rem);
-}
-
-.folio-hero__portrait img {
-  aspect-ratio: 1;
-  border: 1px solid var(--folio-line);
-  border-radius: 4px;
-  object-fit: cover;
-  object-position: 50% 31%;
 }
 
 .folio-eyebrow,
@@ -441,7 +406,10 @@
 }
 
 .folio-about__inner {
-  max-width: 48rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 14rem;
+  gap: 3rem;
+  align-items: start;
 }
 
 .folio-about__text p {
@@ -481,7 +449,7 @@
 .folio-portrait {
   position: relative;
   width: 100%;
-  max-width: 17rem;
+  max-width: 14rem;
 }
 
 .folio-portrait__frame {
@@ -877,19 +845,8 @@
   }
 
   .folio-hero {
-    display: block;
     min-height: 88vh;
     padding-top: 7rem;
-  }
-
-  .folio-hero__portrait {
-    width: 6.5rem;
-    margin: 1.8rem 0 2rem;
-  }
-
-  .folio-hero__portrait img {
-    aspect-ratio: 1;
-    object-position: 50% 31%;
   }
 
   .folio-hero h1 {

@@ -26,11 +26,8 @@ redirect_from:
   <p class="folio-eyebrow folio-enter folio-enter--1">Hi, my name is</p>
   <h1 id="folio-hero-title" class="folio-enter folio-enter--2">Kenneth Zhang.</h1>
   <h2 class="folio-enter folio-enter--3">I build learning-guided optimization systems.</h2>
-  <figure class="folio-hero__portrait folio-enter folio-enter--4">
-    <img src="{{ base_path }}/images/kenneth-zhang.jpg" alt="Portrait of Kenneth Zhang" />
-  </figure>
-  <p class="folio-hero__intro folio-enter folio-enter--5">I am an undergraduate researcher at the Faculty of Data Science, City University of Macau. I study how machine learning can give strong classical solvers better structural hints for constrained routing and intelligent transportation.</p>
-  <div class="folio-hero__actions folio-enter folio-enter--6">
+  <p class="folio-hero__intro folio-enter folio-enter--4">I am an undergraduate researcher at the Faculty of Data Science, City University of Macau. I study how machine learning can give strong classical solvers better structural hints for constrained routing and intelligent transportation.</p>
+  <div class="folio-hero__actions folio-enter folio-enter--5">
     <a class="folio-outline-button" href="#research">Explore my research</a>
     <a class="folio-text-link" href="{{ base_path }}/cv/">View CV <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
   </div>
@@ -54,6 +51,12 @@ redirect_from:
         <li>Energy-Constrained Delivery</li>
       </ul>
     </div>
+    <figure class="folio-portrait">
+      <div class="folio-portrait__frame">
+        <img src="{{ base_path }}/images/kenneth-zhang.jpg" alt="Portrait of Kenneth Zhang" />
+      </div>
+      <figcaption>Kenneth Zhang · 张誉耀</figcaption>
+    </figure>
   </div>
 </section>
 
