@@ -1,7 +1,7 @@
 ---
 layout: profile
 permalink: /
-title: "Yuyao Zhang | Learning-Augmented Optimization"
+title: "Kenneth Zhang | Learning-Augmented Optimization"
 author_profile: false
 redirect_from:
   - /about/
@@ -24,10 +24,13 @@ redirect_from:
 
 <section class="folio-hero" id="home" aria-labelledby="folio-hero-title">
   <p class="folio-eyebrow folio-enter folio-enter--1">Hi, my name is</p>
-  <h1 id="folio-hero-title" class="folio-enter folio-enter--2">Yuyao Zhang.</h1>
+  <h1 id="folio-hero-title" class="folio-enter folio-enter--2">Kenneth Zhang.</h1>
   <h2 class="folio-enter folio-enter--3">I build learning-guided optimization systems.</h2>
-  <p class="folio-hero__intro folio-enter folio-enter--4">I am an undergraduate researcher at the Faculty of Data Science, City University of Macau. I study how machine learning can give strong classical solvers better structural hints for constrained routing and intelligent transportation.</p>
-  <div class="folio-hero__actions folio-enter folio-enter--5">
+  <figure class="folio-hero__portrait folio-enter folio-enter--4">
+    <img src="{{ base_path }}/images/kenneth-zhang.jpg" alt="Portrait of Kenneth Zhang" />
+  </figure>
+  <p class="folio-hero__intro folio-enter folio-enter--5">I am an undergraduate researcher at the Faculty of Data Science, City University of Macau. I study how machine learning can give strong classical solvers better structural hints for constrained routing and intelligent transportation.</p>
+  <div class="folio-hero__actions folio-enter folio-enter--6">
     <a class="folio-outline-button" href="#research">Explore my research</a>
     <a class="folio-text-link" href="{{ base_path }}/cv/">View CV <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
   </div>
@@ -38,7 +41,7 @@ redirect_from:
   <h2 class="folio-numbered-heading" id="about-title"><span>01.</span> About Me</h2>
   <div class="folio-about__inner">
     <div class="folio-about__text">
-      <p>Hi! I’m <strong>Yuyao Zhang (张誉耀)</strong>, an undergraduate student at the Faculty of Data Science, City University of Macau. I am interested in the intersection of machine learning, combinatorial optimization, and intelligent transportation.</p>
+      <p>Hi! I’m <strong>Kenneth Zhang (张誉耀)</strong>, an undergraduate student at the Faculty of Data Science, City University of Macau. I am interested in the intersection of machine learning, combinatorial optimization, and intelligent transportation.</p>
       <p>My current research explores a simple question: <strong>can learning help strong classical optimization solvers make better decisions?</strong> Instead of asking neural networks to construct an entire route from scratch, I work on learning useful structural hints, such as promising candidate edges, route-state signals, and feasibility-aware patterns, to guide Population-LKH and local search.</p>
       <p>I am especially interested in routing problems with practical constraints: customer groups, priority rules, charging stations, battery limits, and time windows.</p>
       <p>Some areas I am currently working with:</p>
@@ -53,9 +56,9 @@ redirect_from:
     </div>
     <figure class="folio-portrait">
       <div class="folio-portrait__frame">
-        <img src="{{ base_path }}/images/yuyao-zhang.jpg" alt="Portrait of Yuyao Zhang" />
+        <img src="{{ base_path }}/images/kenneth-zhang.jpg" alt="Portrait of Kenneth Zhang" />
       </div>
-      <figcaption>Yuyao Zhang · 张誉耀</figcaption>
+      <figcaption>Kenneth Zhang · 张誉耀</figcaption>
     </figure>
   </div>
 </section>

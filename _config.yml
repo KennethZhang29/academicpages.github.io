@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Yuyao Zhang"
+title                    : "Kenneth Zhang"
 title_separator          : "-"
-name                     : &name "Yuyao Zhang"
-description              : &description "Yuyao Zhang's academic portfolio: machine learning, combinatorial optimization, and intelligent transportation."
+name                     : &name "Kenneth Zhang"
+description              : &description "Kenneth Zhang's academic portfolio: machine learning, combinatorial optimization, and intelligent transportation."
 url                      : "https://kennethzhang29.github.io"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "/academicpages.github.io"
@@ -23,8 +23,8 @@ repository               : "KennethZhang29/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "yuyao-zhang.jpg"
-  name             : "Yuyao Zhang (张誉耀)"
+  avatar           : "kenneth-zhang.jpg"
+  name             : "Kenneth Zhang (张誉耀)"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate researcher working on learning-augmented optimization, constrained routing, and intelligent transportation."
   location         : "Guangzhou · Macau · Zhuhai"

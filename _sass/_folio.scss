@@ -246,12 +246,47 @@
 
 .folio-hero {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(13rem, 16rem);
+  column-gap: 3rem;
   min-height: 88vh;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-content: center;
   padding: 6rem 0 4rem;
+}
+
+.folio-hero > .folio-eyebrow,
+.folio-hero > h1,
+.folio-hero > h2,
+.folio-hero > .folio-hero__intro,
+.folio-hero > .folio-hero__actions {
+  grid-column: 1;
+}
+
+.folio-hero__portrait {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / 6;
+  align-self: center;
+  width: 100%;
+  margin: 0;
+}
+
+.folio-hero__portrait::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border: 2px solid var(--folio-accent);
+  border-radius: 4px;
+  transform: translate(0.9rem, 0.9rem);
+}
+
+.folio-hero__portrait img {
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--folio-line);
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: 50% 36%;
 }
 
 .folio-eyebrow,
@@ -265,7 +300,7 @@
 
 .folio-hero h1 {
   margin-top: 1.2rem;
-  font-size: 5rem;
+  font-size: 4.1rem;
   font-weight: 720;
   line-height: 1;
 }
@@ -274,7 +309,7 @@
   max-width: 56rem;
   margin-top: 0.5rem;
   color: var(--folio-muted);
-  font-size: 3.45rem;
+  font-size: 2.45rem;
   font-weight: 680;
   line-height: 1.08;
 }
@@ -361,6 +396,7 @@
 .folio-enter--3 { animation-delay: 240ms; }
 .folio-enter--4 { animation-delay: 320ms; }
 .folio-enter--5 { animation-delay: 400ms; }
+.folio-enter--6 { animation-delay: 480ms; }
 
 .folio-section {
   padding: 6.5rem 0;
@@ -470,14 +506,7 @@
 }
 
 .folio-portrait__frame::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  border-radius: 4px;
-  background: rgba(112, 223, 199, 0.24);
-  mix-blend-mode: color;
-  transition: opacity 180ms ease;
+  display: none;
 }
 
 .folio-portrait__frame:hover {
@@ -488,16 +517,12 @@
   transform: translate(1.15rem, 1.15rem);
 }
 
-.folio-portrait__frame:hover::before {
-  opacity: 0;
-}
-
 .folio-portrait img {
   aspect-ratio: 4 / 5;
   border-radius: 4px;
   object-fit: cover;
   object-position: 50% 23%;
-  filter: grayscale(70%) contrast(1.04);
+  filter: none;
 }
 
 .folio-portrait__frame:hover img {
@@ -855,8 +880,19 @@
   }
 
   .folio-hero {
+    display: block;
     min-height: 88vh;
     padding-top: 7rem;
+  }
+
+  .folio-hero__portrait {
+    width: 10rem;
+    margin: 1.8rem 0 2rem;
+  }
+
+  .folio-hero__portrait img {
+    aspect-ratio: 1;
+    object-position: 50% 31%;
   }
 
   .folio-hero h1 {
