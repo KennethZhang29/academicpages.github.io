@@ -8,17 +8,17 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "About"
+  - title: "01. About"
     url: /#about
 
-  - title: "Research"
+  - title: "02. Experience"
+    url: /#experience
+
+  - title: "03. Research"
     url: /#research
 
-  - title: "Journey"
-    url: /#journey
+  - title: "04. Contact"
+    url: /#contact
     
   - title: "CV"
     url: /cv/
-
-  - title: "GitHub"
-    url: "https://github.com/KennethZhang29"

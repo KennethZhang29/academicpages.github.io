@@ -10,180 +10,140 @@ redirect_from:
 
 {% include base_path %}
 
-<section class="route-hero" id="home" aria-labelledby="route-hero-title">
-  <div class="route-hero__copy">
-    <p class="route-kicker"><span>01</span> Learning-Augmented Optimization</p>
-    <h1 id="route-hero-title"><span>Yuyao</span><span>Zhang</span></h1>
-    <p class="route-hero__cn">张誉耀</p>
-    <p class="route-hero__lead">I study how learning can help strong classical optimization solvers make better decisions.</p>
-    <div class="route-hero__actions">
-      <a class="route-button route-button--primary" href="#research">Explore research <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-      <a class="route-button" href="https://github.com/KennethZhang29"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
-      <a class="route-button" href="{{ base_path }}/cv/"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> CV</a>
-    </div>
+<aside class="folio-side folio-side--left" aria-label="Profile links">
+  <a href="https://github.com/KennethZhang29" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+  <a href="{{ base_path }}/cv/" aria-label="Curriculum vitae" title="CV"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></a>
+  <a href="#research" aria-label="Research projects" title="Research"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></a>
+  <span aria-hidden="true"></span>
+</aside>
+
+<aside class="folio-side folio-side--right" aria-label="Current locations">
+  <p>Guangzhou · Macau · Zhuhai</p>
+  <span aria-hidden="true"></span>
+</aside>
+
+<section class="folio-hero" id="home" aria-labelledby="folio-hero-title">
+  <p class="folio-eyebrow folio-enter folio-enter--1">Hi, my name is</p>
+  <h1 id="folio-hero-title" class="folio-enter folio-enter--2">Yuyao Zhang.</h1>
+  <h2 class="folio-enter folio-enter--3">I build learning-guided optimization systems.</h2>
+  <p class="folio-hero__intro folio-enter folio-enter--4">I am an undergraduate researcher at the Faculty of Data Science, City University of Macau. I study how machine learning can give strong classical solvers better structural hints for constrained routing and intelligent transportation.</p>
+  <div class="folio-hero__actions folio-enter folio-enter--5">
+    <a class="folio-outline-button" href="#research">Explore my research</a>
+    <a class="folio-text-link" href="{{ base_path }}/cv/">View CV <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
   </div>
-
-  <aside class="route-status" aria-label="Current research coordinates">
-    <p class="route-status__label">Current coordinates</p>
-    <div class="route-status__row">
-      <span>Base</span>
-      <strong>Guangzhou · Macau · Zhuhai</strong>
-    </div>
-    <div class="route-status__row">
-      <span>Affiliation</span>
-      <strong>Faculty of Data Science, City University of Macau</strong>
-    </div>
-    <div class="route-status__row">
-      <span>Research question</span>
-      <strong>Can learned structure guide reliable search?</strong>
-    </div>
-    <div class="route-status__row route-status__row--accent">
-      <span>Status</span>
-      <strong><i aria-hidden="true"></i> Building, testing, explaining</strong>
-    </div>
-  </aside>
-
-  <a class="route-scroll" href="#about" aria-label="Continue to about section">
-    <span>Scroll to trace the route</span>
-    <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
-  </a>
+  <a class="folio-scroll-cue" href="#about" aria-label="Scroll to About Me"><span></span>Scroll</a>
 </section>
 
-<section class="route-section route-about" id="about" aria-labelledby="about-title">
-  <div class="route-section__index" aria-hidden="true">02 / PROFILE</div>
-  <div class="route-about__portrait">
-    <img src="{{ base_path }}/images/yuyao-zhang.jpg" alt="Portrait of Yuyao Zhang" />
-    <p>Undergraduate researcher<br>City University of Macau</p>
-  </div>
-  <div class="route-about__copy">
-    <p class="route-kicker"><span>About</span> Researcher behind the routes</p>
-    <h2 id="about-title">Classical search backbone.<br>Learned structural hints.</h2>
-    <p>I am an undergraduate student in the Faculty of Data Science at City University of Macau. My research interests lie at the intersection of machine learning, combinatorial optimization, and intelligent transportation.</p>
-    <p>Rather than asking neural networks to construct entire solutions from scratch, I explore how learned information, including promising candidate edges, route-state signals, and feasibility-aware patterns, can guide established methods such as Population-LKH and local search.</p>
-    <p>I am particularly interested in routing problems shaped by real-world constraints: customer groups, priority rules, charging stations, battery capacity, and time windows. Beyond model performance, I care about reliable experimentation, interpretable improvements, and understanding why a method works or fails.</p>
-    <div class="route-interest-line" aria-label="Research interests">
-      <span>Learning-Augmented Optimization</span>
-      <span>Evolutionary Computation</span>
-      <span>Reinforcement Learning</span>
-      <span>Vehicle Routing</span>
-      <span>Energy-Constrained Delivery</span>
+<section class="folio-section folio-about folio-reveal" id="about" aria-labelledby="about-title">
+  <h2 class="folio-numbered-heading" id="about-title"><span>01.</span> About Me</h2>
+  <div class="folio-about__inner">
+    <div class="folio-about__text">
+      <p>Hi! I’m <strong>Yuyao Zhang (张誉耀)</strong>, an undergraduate student at the Faculty of Data Science, City University of Macau. I am interested in the intersection of machine learning, combinatorial optimization, and intelligent transportation.</p>
+      <p>My current research explores a simple question: <strong>can learning help strong classical optimization solvers make better decisions?</strong> Instead of asking neural networks to construct an entire route from scratch, I work on learning useful structural hints, such as promising candidate edges, route-state signals, and feasibility-aware patterns, to guide Population-LKH and local search.</p>
+      <p>I am especially interested in routing problems with practical constraints: customer groups, priority rules, charging stations, battery limits, and time windows.</p>
+      <p>Some areas I am currently working with:</p>
+      <ul class="folio-skills">
+        <li>Learning-Augmented Optimization</li>
+        <li>Combinatorial Optimization</li>
+        <li>Evolutionary Computation</li>
+        <li>Reinforcement Learning</li>
+        <li>Vehicle Routing</li>
+        <li>Energy-Constrained Delivery</li>
+      </ul>
     </div>
-  </div>
-</section>
-
-<section class="route-section route-research" id="research" aria-labelledby="research-title">
-  <div class="route-section__index" aria-hidden="true">03 / RESEARCH</div>
-  <header class="route-section__header">
-    <p class="route-kicker"><span>Selected work</span> Problem → Method → Evidence</p>
-    <h2 id="research-title">Research is a sequence of decisions.</h2>
-    <p>These projects connect one research theme: using learned structure to make constrained search more effective, robust, and explainable.</p>
-  </header>
-
-  <article class="route-project">
-    <figure class="route-project__visual">
-      <img src="{{ base_path }}/images/research-framework.png" alt="Framework for learned structural-prior guided Population-LKH" />
-      <figcaption>01 · Learned structural priors guiding Population-LKH</figcaption>
+    <figure class="folio-portrait">
+      <div class="folio-portrait__frame">
+        <img src="{{ base_path }}/images/yuyao-zhang.jpg" alt="Portrait of Yuyao Zhang" />
+      </div>
+      <figcaption>Yuyao Zhang · 张誉耀</figcaption>
     </figure>
-    <div class="route-project__copy">
-      <p class="route-project__number">PROJECT 01</p>
-      <h3>Learned Structural-Prior Guided Population-LKH for BWTSP</h3>
-      <p>A neural-combinatorial framework that learns promising candidate edges, adapts the prior policy, and uses a guarded selector to guide strong finite-L search.</p>
-      <dl class="route-project__facts">
-        <div><dt>Problem</dt><dd>Budgeted weighted TSP</dd></div>
-        <div><dt>Method</dt><dd>Edge priors + adaptive selection</dd></div>
-        <div><dt>Evidence</dt><dd>12 / 12 portfolio-best matches</dd></div>
-      </dl>
-      <a href="{{ base_path }}/portfolio/portfolio-1/">Read the project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-    </div>
-  </article>
-
-  <article class="route-project route-project--reverse">
-    <figure class="route-project__visual">
-      <img src="{{ base_path }}/images/route-comparison.png" alt="Route comparison for constrained routing experiments" />
-      <figcaption>02 · Route-level inspection under practical constraints</figcaption>
-    </figure>
-    <div class="route-project__copy">
-      <p class="route-project__number">PROJECT 02</p>
-      <h3>Energy-Constrained Delivery for Drones and Electric Vehicles</h3>
-      <p>An ongoing research direction extending static edge guidance toward move- and route-state-aware optimization for payload-dependent energy routing and optional charging stations.</p>
-      <dl class="route-project__facts">
-        <div><dt>Problem</dt><dd>Energy-aware delivery</dd></div>
-        <div><dt>Signals</dt><dd>Edge + move + route state</dd></div>
-        <div><dt>Goal</dt><dd>Robust feasibility-aware search</dd></div>
-      </dl>
-      <a href="{{ base_path }}/portfolio/portfolio-2/">Read the project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-    </div>
-  </article>
+  </div>
 </section>
 
-<section class="route-evidence" aria-labelledby="evidence-title">
-  <div class="route-evidence__copy">
-    <p class="route-kicker"><span>Evidence</span> Not just a final score</p>
-    <h2 id="evidence-title">I want results that survive inspection.</h2>
-    <p>My workflow combines benchmark design, route visualization, ablation studies, and mechanism-level diagnostics. A suspiciously good result is the beginning of the investigation, not the end.</p>
-    <div class="route-metrics">
-      <div><strong>12 / 12</strong><span>portfolio-best matches</span></div>
-      <div><strong>3.10×</strong><span>lower selection cost</span></div>
-      <div><strong>2</strong><span>connected routing research lines</span></div>
+<section class="folio-section folio-experience folio-reveal" id="experience" aria-labelledby="experience-title">
+  <h2 class="folio-numbered-heading" id="experience-title"><span>02.</span> Where I’ve Studied &amp; Researched</h2>
+  <div class="folio-tabs">
+    <div class="folio-tabs__list" role="tablist" aria-label="Education and research experience">
+      <button class="is-active" id="tab-ilsca" type="button" role="tab" aria-selected="true" aria-controls="panel-ilsca" data-folio-tab="ilsca">iLSCA Lab</button>
+      <button id="tab-cityu" type="button" role="tab" aria-selected="false" aria-controls="panel-cityu" tabindex="-1" data-folio-tab="cityu">CityU Macau</button>
+    </div>
+    <div class="folio-tabs__panels">
+      <article class="folio-tab-panel is-active" id="panel-ilsca" role="tabpanel" aria-labelledby="tab-ilsca" data-folio-panel="ilsca">
+        <h3>Research Assistant <span>@ iLSCA Lab, HKUST (Guangzhou)</span></h3>
+        <p class="folio-tab-panel__date">June 2026 – August 2026 · Guangzhou</p>
+        <ul>
+          <li>Worked on learning-guided approaches for constrained combinatorial optimization and routing.</li>
+          <li>Investigated how learned candidate-edge and route-state signals can support strong search procedures.</li>
+          <li>Focused on careful benchmark design, ablation studies, and mechanism-level inspection.</li>
+        </ul>
+      </article>
+      <article class="folio-tab-panel" id="panel-cityu" role="tabpanel" aria-labelledby="tab-cityu" data-folio-panel="cityu" hidden>
+        <h3>Undergraduate Student <span>@ City University of Macau</span></h3>
+        <p class="folio-tab-panel__date">2023 – 2027 (Expected) · Macau</p>
+        <ul>
+          <li>Studying in the Faculty of Data Science with a growing focus on optimization and machine learning.</li>
+          <li>Building research experience across evolutionary computation, reinforcement learning, and vehicle routing.</li>
+          <li>Based across Guangzhou, Macau, and Zhuhai in the Greater Bay Area.</li>
+        </ul>
+      </article>
     </div>
   </div>
-  <figure class="route-evidence__visual">
-    <img src="{{ base_path }}/images/ablation.png" alt="Ablation results for learning-guided BWTSP search" />
-    <figcaption>Ablation view · isolating the contribution of guidance, adaptation, and selection</figcaption>
-  </figure>
 </section>
 
-<section class="route-section route-journey" id="journey" aria-labelledby="journey-title">
-  <div class="route-section__index" aria-hidden="true">04 / JOURNEY</div>
-  <header class="route-section__header">
-    <p class="route-kicker"><span>Trajectory</span> Three cities, one research direction</p>
-    <h2 id="journey-title">Macau → Guangzhou → the next problem.</h2>
-  </header>
+<section class="folio-section folio-research folio-reveal" id="research" aria-labelledby="research-title">
+  <h2 class="folio-numbered-heading" id="research-title"><span>03.</span> Selected Research</h2>
+  <div class="folio-projects">
+    <article class="folio-project">
+      <div class="folio-project__content">
+        <p class="folio-project__overline">Featured Research</p>
+        <h3>Learned Structural-Prior Guided Population-LKH</h3>
+        <div class="folio-project__description"><p>A neural-combinatorial framework for BWTSP that learns promising candidate edges, adapts its prior policy, and uses guarded selection to guide finite-L search.</p></div>
+        <ul class="folio-project__tech"><li>Population-LKH</li><li>Edge Priors</li><li>Adaptive Selection</li></ul>
+        <div class="folio-project__links">
+          <a href="{{ base_path }}/portfolio/portfolio-1/" aria-label="Read BWTSP project" title="Read project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          <a href="https://github.com/KennethZhang29" aria-label="View GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <a class="folio-project__image" href="{{ base_path }}/portfolio/portfolio-1/" aria-label="Read Learned Structural-Prior Guided Population-LKH project"><img src="{{ base_path }}/images/research-framework.png" alt="Framework for learned structural-prior guided Population-LKH" /></a>
+    </article>
 
-  <div class="route-journey__line" aria-label="Education and research experience">
-    <article>
-      <span class="route-journey__node" aria-hidden="true">MO</span>
-      <p class="route-journey__date">2023–2027</p>
-      <h3>Undergraduate Study</h3>
-      <p>Faculty of Data Science<br>City University of Macau</p>
+    <article class="folio-project">
+      <div class="folio-project__content">
+        <p class="folio-project__overline">Ongoing Research</p>
+        <h3>Energy-Constrained Delivery</h3>
+        <div class="folio-project__description"><p>Extending static edge guidance toward move- and route-state-aware optimization for drones and electric vehicles under battery, payload, and charging constraints.</p></div>
+        <ul class="folio-project__tech"><li>Vehicle Routing</li><li>Energy Models</li><li>Feasibility-Aware Search</li></ul>
+        <div class="folio-project__links"><a href="{{ base_path }}/portfolio/portfolio-2/" aria-label="Read energy-constrained delivery project" title="Read project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+      </div>
+      <a class="folio-project__image" href="{{ base_path }}/portfolio/portfolio-2/" aria-label="Read energy-constrained delivery project"><img src="{{ base_path }}/images/route-comparison.png" alt="Route comparison for constrained routing experiments" /></a>
     </article>
-    <article>
-      <span class="route-journey__node" aria-hidden="true">GZ</span>
-      <p class="route-journey__date">Jun–Aug 2026</p>
-      <h3>Research Assistant</h3>
-      <p>iLSCA Lab<br>HKUST (Guangzhou)</p>
-    </article>
-    <article>
-      <span class="route-journey__node" aria-hidden="true">ZH</span>
-      <p class="route-journey__date">Current network</p>
-      <h3>Greater Bay Area</h3>
-      <p>Guangzhou · Macau · Zhuhai<br>Research without a single coordinate</p>
+
+    <article class="folio-project">
+      <div class="folio-project__content">
+        <p class="folio-project__overline">Research Practice</p>
+        <h3>Evidence Before Claims</h3>
+        <div class="folio-project__description"><p>I use ablations, route visualization, portfolio comparisons, and mechanism-level diagnostics to understand whether an improvement is real and why it happens.</p></div>
+        <ul class="folio-project__tech"><li>Ablation Studies</li><li>Diagnostics</li><li>Reproducibility</li></ul>
+      </div>
+      <div class="folio-project__image"><img src="{{ base_path }}/images/ablation.png" alt="Ablation results for learning-guided BWTSP search" /></div>
     </article>
   </div>
 </section>
 
-<section class="route-section route-methods" aria-labelledby="methods-title">
-  <div class="route-section__index" aria-hidden="true">05 / METHODS</div>
-  <header class="route-section__header">
-    <p class="route-kicker"><span>Working style</span> Build, test, inspect, explain</p>
-    <h2 id="methods-title">A practical research loop.</h2>
-  </header>
-  <div class="route-methods__grid">
-    <div><i class="fa-solid fa-code" aria-hidden="true"></i><strong>Build</strong><span>Python research engineering</span></div>
-    <div><i class="fa-solid fa-gears" aria-hidden="true"></i><strong>Search</strong><span>Heuristics and evolutionary methods</span></div>
-    <div><i class="fa-solid fa-brain" aria-hidden="true"></i><strong>Learn</strong><span>Structural priors and reinforcement learning</span></div>
-    <div><i class="fa-solid fa-flask" aria-hidden="true"></i><strong>Test</strong><span>Reproducible experiments and ablations</span></div>
-    <div><i class="fa-solid fa-chart-line" aria-hidden="true"></i><strong>Inspect</strong><span>Benchmark and route diagnostics</span></div>
-    <div><i class="fa-solid fa-file-lines" aria-hidden="true"></i><strong>Explain</strong><span>Clear claims and research narratives</span></div>
+<section class="folio-section folio-methods folio-reveal" aria-labelledby="methods-title">
+  <h2 class="folio-standalone-heading" id="methods-title">Other Things I Care About</h2>
+  <div class="folio-methods__grid">
+    <article><i class="fa-solid fa-code" aria-hidden="true"></i><h3>Build</h3><p>Python research engineering and solver integration.</p></article>
+    <article><i class="fa-solid fa-brain" aria-hidden="true"></i><h3>Learn</h3><p>Structural priors, route signals, and reinforcement learning.</p></article>
+    <article><i class="fa-solid fa-flask" aria-hidden="true"></i><h3>Test</h3><p>Benchmarks, controlled ablations, and reproducible runs.</p></article>
+    <article><i class="fa-solid fa-chart-line" aria-hidden="true"></i><h3>Explain</h3><p>Route diagnostics and mechanism-level interpretation.</p></article>
   </div>
 </section>
 
-<section class="route-contact" aria-labelledby="contact-title">
-  <p class="route-kicker"><span>06</span> Keep the route open</p>
-  <h2 id="contact-title">Interested in optimization that works in the real world.</h2>
-  <div class="route-contact__links">
-    <a href="https://github.com/KennethZhang29"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
-    <a href="{{ base_path }}/cv/"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Curriculum Vitae</a>
-    <a href="{{ base_path }}/portfolio/"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Research Projects</a>
-  </div>
+<section class="folio-section folio-contact folio-reveal" id="contact" aria-labelledby="contact-title">
+  <p class="folio-eyebrow">04. What’s Next?</p>
+  <h2 id="contact-title">Let’s solve a hard routing problem.</h2>
+  <p>I am interested in research opportunities and conversations around learning-augmented optimization, intelligent transportation, and reliable combinatorial search.</p>
+  <a class="folio-outline-button" href="https://github.com/KennethZhang29">Find me on GitHub</a>
+  <p class="folio-credit">Design direction inspired by <a href="https://brittanychiang.com">Brittany Chiang</a>.</p>
 </section>

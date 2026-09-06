@@ -540,7 +540,8 @@ body {
 .route-section,
 .route-evidence,
 .route-contact {
-  width: min(100% - 2.5rem, 1240px);
+  width: calc(100% - 2.5rem);
+  max-width: 1240px;
   margin-inline: auto;
 }
 
@@ -1147,7 +1148,8 @@ body {
   .route-section,
   .route-evidence,
   .route-contact {
-    width: min(100% - 1.5rem, 1240px);
+    width: calc(100% - 1.5rem);
+    max-width: 1240px;
   }
 
   .route-hero {

@@ -7,7 +7,8 @@
   if (!context) return;
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const darkMode = () => document.documentElement.dataset.theme === 'dark';
+  const darkMode = () => canvas.dataset.palette === 'folio'
+    || document.documentElement.dataset.theme === 'dark';
   let width = 0;
   let height = 0;
   let scale = 1;
