@@ -1,0 +1,23 @@
+section,problem,size,method,objective,gap_pct
+main,BWTSP,20,POMO (3K),4.740,2.1
+main,BWTSP,20,GC-POMO (3K),4.690,1.0
+main,BWTSP,50,POMO (3K),6.604,-3.1
+main,BWTSP,50,GC-POMO (3K),6.422,-5.8
+main,BWTSP,100,POMO (3K),8.900,-6.6
+main,BWTSP,100,GC-POMO (3K),8.565,-10.2
+main,CTSP-d,20,POMO (3K),2.623,3.3
+main,CTSP-d,20,GC-POMO (3K),2.608,2.8
+main,CTSP-d,50,POMO (3K),5.162,4.8
+main,CTSP-d,50,GC-POMO (3K),5.079,3.1
+main,CTSP-d,100,POMO (3K),9.036,3.8
+main,CTSP-d,100,GC-POMO (3K),8.702,0.0
+generalization,BWTSP,200,POMO (3K),12.328,7.1
+generalization,BWTSP,200,GC-POMO (3K),11.868,3.0
+generalization,BWTSP,300,POMO (3K),15.849,14.0
+generalization,BWTSP,300,GC-POMO (3K),15.186,9.2
+generalization,BWTSP,500,POMO (3K),23.353,32.7
+generalization,BWTSP,500,GC-POMO (3K),20.842,18.5
+ablation,CTSP-d,100,POMO (1K),9.099,3.8
+ablation,CTSP-d,100,Without group encoder,8.865,1.1
+ablation,CTSP-d,100,Without group decoder,8.772,0.3
+ablation,CTSP-d,100,GC-POMO (1K),8.765,0.0

@@ -1,0 +1,72 @@
+{
+  "pdf": "assets/research-figures/vector/gc-pomo-results.pdf",
+  "auditable": true,
+  "verdict": "REVIEW REQUIRED",
+  "page_count": 1,
+  "visible_text_box_count": 67,
+  "text_trace_count": 67,
+  "stroke_path_count": 30,
+  "filled_region_count": 25,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 0,
+    "warn": 2,
+    "contained_fill_overlays": 11,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 1 filled region(s)",
+      "text": "GC-POMO",
+      "text_bbox": [
+        202.73155212402344,
+        271.2781982421875,
+        234.5089569091797,
+        277.7781982421875
+      ],
+      "other_text": null,
+      "other_bbox": [
+        34.958770751953125,
+        226.16360473632812,
+        233.23568725585938,
+        327.3119812011719
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        21000
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 1 filled region(s)",
+      "text": "GC-POMO",
+      "text_bbox": [
+        205.88714599609375,
+        169.56759643554688,
+        237.66455078125,
+        176.06759643554688
+      ],
+      "other_text": null,
+      "other_bbox": [
+        34.958770751953125,
+        76.4639892578125,
+        233.23568725585938,
+        177.6123809814453
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        1000
+      ]
+    }
+  ]
+}

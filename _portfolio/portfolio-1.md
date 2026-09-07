@@ -30,7 +30,7 @@ The method is a two-stage learning-enhanced Population-LKH pipeline:
 4. **Guide classical search.** The sparse prior is injected through LKH's native `EDGE_FILE` interface, leaving the solver's local-search mechanics intact.
 5. **Select robustly.** A learned variant selector chooses among guided configurations, while confidence- and sparsity-triggered hedge guards preserve fallback options under prediction error.
 
-![Two-stage cluster-aware edge-prior guided Population-LKH framework]({{ base_path }}/images/research-framework.png)
+![Two-stage cluster-aware edge-prior guided Population-LKH framework]({{ base_path }}/images/research-figures/guided-lkh-method.png)
 
 ## Experimental Results
 
@@ -39,7 +39,7 @@ The method is a two-stage learning-enhanced Population-LKH pipeline:
 - **Cross-size behavior:** On unseen generated instances with 600, 800, and 1,000 nodes, the learned-prior oracle reduced aggregate tour length by **3.5%**; the practical guarded selector achieved a **1.0%** reduction.
 - **Ablation evidence:** A handcrafted structural prior already reduced penalty by **78.4%**. Learned ranking, sparsification, selection, and hedge guards raised the reduction to **95.8%**, supporting the value of each stage beyond candidate construction alone.
 
-![Ablation results for guided finite-L BWTSP search]({{ base_path }}/images/ablation.png)
+![Results for guided finite-L BWTSP search, including development, holdout, and cross-size evidence]({{ base_path }}/images/research-figures/guided-lkh-results.png)
 
 ## Interpretation and Limitations
 

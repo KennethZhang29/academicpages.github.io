@@ -21,3 +21,6 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Nature-figure collision overlays are local QA diagnostics.
+scripts/research_figures/qa/*-collisions-overlay.pdf

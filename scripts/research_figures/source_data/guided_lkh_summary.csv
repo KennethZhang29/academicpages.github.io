@@ -1,0 +1,11 @@
+section,variant,penalty,objective,penalty_reduction_pct,objective_reduction_pct,feasible_count
+development,Population LKH,35452,110.243,0.0,0.0,
+development,Handcrafted prior,7659,109.429,78.4,0.7,
+development,Learned prior + oracle,2579,105.370,92.7,4.4,
+development,Learned selector,2732,107.044,92.3,2.9,
+development,Full policy + hedges,1497,104.563,95.8,5.2,
+heldout,Population LKH,29359.8,113.780,0.0,0.0,4.4
+heldout,Generated-only selector,11342.2,110.777,61.4,2.6,7.4
+cross_size,Population LKH,,137.695,0.0,0.0,
+cross_size,Learned-prior oracle,,132.879,0.0,3.5,
+cross_size,Guarded selector,,136.282,0.0,1.0,
