@@ -30,7 +30,7 @@ GC-POMO extends the POMO construction paradigm with three group-aware components
 
 The model is trained with policy-gradient reinforcement learning and POMO-style multi-start rollouts. The shared architecture remains the same across the two problem families; the constraint state and action masks encode their different routing rules.
 
-![GC-POMO group-aware encoder and interactive dual-decoder architecture]({{ base_path }}/images/research-figures/gc-pomo-method.png)
+![GC-POMO group-aware encoder and interactive dual-decoder architecture]({{ site.baseurl }}/images/research-figures/gc-pomo-method.png)
 
 ## Experimental Results
 
@@ -39,7 +39,7 @@ The model is trained with policy-gradient reinforcement learning and POMO-style 
 - **Cross-size generalization:** Models evaluated on BWTSP200, BWTSP300, and BWTSP500 reduced the gap to LKH from POMO's **7.1%, 14.0%, and 32.7%** to **3.0%, 9.2%, and 18.5%**. On large CTSP-d instances, GC-POMO obtained the best reported feasible objective in each tested size group.
 - **Ablation evidence:** Removing either the group-aware encoder or the inter-group decoder degraded performance. The encoder had the larger effect on solution quality, while the decoder introduced more computational cost.
 
-![GC-POMO results across BWTSP, CTSP-d, cross-size generalization, and ablation studies]({{ base_path }}/images/research-figures/gc-pomo-results.png)
+![GC-POMO results across BWTSP, CTSP-d, cross-size generalization, and ablation studies]({{ site.baseurl }}/images/research-figures/gc-pomo-results.png)
 
 ## My Contribution
 
