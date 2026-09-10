@@ -9,6 +9,21 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="cv-pdf-panel">
+  <div class="cv-pdf-panel__copy">
+    <p class="cv-pdf-panel__eyebrow">Academic CV · September 2026</p>
+    <h2>One-page research CV</h2>
+    <p>A concise overview of my education, research experience, selected projects, technical skills, and current research interests.</p>
+    <div class="cv-pdf-panel__actions">
+      <a class="btn btn--primary" href="{{ base_path }}/files/Kenneth_Zhang_CV.pdf" download><i class="fa-solid fa-download" aria-hidden="true"></i> Download PDF</a>
+      <a class="btn btn--inverse" href="{{ base_path }}/files/Kenneth_Zhang_CV.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Open PDF</a>
+    </div>
+  </div>
+  <a class="cv-pdf-preview" href="{{ base_path }}/files/Kenneth_Zhang_CV.pdf" target="_blank" rel="noopener" aria-label="Open Kenneth Zhang's academic CV as a PDF">
+    <img src="{{ base_path }}/images/kenneth-zhang-cv-preview.png" alt="Preview of Kenneth Zhang's one-page academic CV" />
+  </a>
+</div>
+
 Research Profile
 ======
 
